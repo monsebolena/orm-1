@@ -10,8 +10,8 @@ $peliculas=Film::all();
 
 foreach ($peliculas as $value) {
     echo $value->title;
-    foreach ($value->actors() as $actor) {
-        echo $actor->first_name.",";
+    foreach ($value->actors as $a) {
+        echo $a->first_name.",";
     }
     echo "<br>";
     
