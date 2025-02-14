@@ -1,5 +1,6 @@
 <?php
 require 'vendor/autoload.php';
+require 'config.php';
 
 use Illuminate\Database\Capsule\Manager as Capsule;
 
@@ -7,10 +8,10 @@ use Illuminate\Database\Capsule\Manager as Capsule;
 $capsule = new Capsule;
 $capsule->addConnection([
     'driver'    => 'mysql',         // o 'sqlite', 'pgsql', 'sqlsrv'
-    'host'      => '127.0.0.1',
-    'database'  => 'sakila',
-    'username'  => 'root',
-    'password'  => '',
+    'host'      => HOST,
+    'database'  => DB_DATABASE,
+    'username'  => DB_USER,
+    'password'  => DB_PASS,
     'charset'   => 'utf8',
     'collation' => 'utf8_unicode_ci',
     'prefix'    => '',
