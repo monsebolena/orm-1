@@ -21,4 +21,4 @@ foreach ($pelicula->actors as $key => $value) {
     echo $value->first_name." , ";
 }
     
-  
+?>  
